@@ -8,6 +8,7 @@ resource "google_project_service" "required_apis" {
     "compute.googleapis.com",
     "iam.googleapis.com",
     "networkservices.googleapis.com",
+    "secretmanager.googleapis.com"
   ])
   project    = var.project_id
   service    = each.value
